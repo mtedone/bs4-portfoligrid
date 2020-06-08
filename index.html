@@ -10,6 +10,12 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <script
       src="https://kit.fontawesome.com/b9a13d7d59.js"
@@ -212,6 +218,109 @@
         </div>
       </div>
 
+      <!-- WORK -->
+      <div id="work" class="collapse">
+        <div class="card card-body bg-warning text-white py-5">
+          <h2>My Work</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            repellat?
+          </p>
+        </div>
+
+        <div class="card card-body py-5">
+          <h3>What Have I Built</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            molestias alias vero, nemo tempore deserunt.
+          </p>
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=252"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=252"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=253"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=253"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=254"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=254"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=255"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=255"
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=256"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=256"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=257"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=257"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=258"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=258"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=259"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=259"
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- FOOTER -->
       <footer id="main-footer" class="p-5 bg-dark text-white">
         <div class="row">
@@ -239,9 +348,20 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs="
+      crossorigin="anonymous"
+    ></script>
     <script>
       $('.port-item').click(() => {
         $('.collapse').collapse('hide');
+      });
+
+      // Initialise lightbox
+      $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
       });
     </script>
   </body>
